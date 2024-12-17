@@ -1,0 +1,69 @@
+.pvp-setlements-block .setlements-block {
+    border: 2px solid #dddddd;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px #ebebeb;
+}
+
+.pvp-setlements-block .limit-remaining-graph {
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.pvp-setlements-block .limit-remaining-graph .limits {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .pvp-setlements-block .limit-remaining-graph .limits .limit-value {
+    color: #c4c4d2;
+ }
+
+ .pvp-setlements-block .limit-remaining-graph .graph-line {
+     margin: 10px 0;
+     padding: 0;
+     border-radius: 5px;
+     background: #eeeefa;
+ }
+
+.pvp-setlements-block .limit-remaining-graph .graph-line .limit-used {
+    margin: 0;
+    border-radius: 5px;
+    background: #c91749;
+    color: #fff;
+    text-align: right;
+    padding: 5px 5px 5px 0;
+    font-size: .9em;
+}
+
+.pvp-setlements-block .setlements-info {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pvp-setlements-block .setlements-info .info-block {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 49%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.pvp-setlements-block .setlements-info .info-block .block-header {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #413e4a;
+}
+
+.pvp-setlements-block .setlements-info .info-block .block-value {
+    color: #413e4a;
+    font-size: 2.5em;
+    font-weight: bold;
+}

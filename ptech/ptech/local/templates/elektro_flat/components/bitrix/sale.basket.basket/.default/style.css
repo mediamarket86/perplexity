@@ -1,0 +1,14 @@
+.cart-items .equipment .catalog-item-favorite {
+    display: table-cell;
+    width: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cart-items .equipment .catalog-item-favorite .favorite-button .favorite-button-desc {
+    display: none;
+}
+
+.basket-download-form {
+    display: none;
+}

@@ -1,0 +1,89 @@
+.pvp-checklog-block {
+    width: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.pvp-checklog-block .action-block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.pvp-checklog-block .dates {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #b9c0de;
+    border-radius: 3px;
+    width: 315px;
+    color: #8a8d9a;
+}
+
+.pvp-checklog-block .dates .label-text {
+    padding: 3px 5px;
+}
+
+.pvp-checklog-block .dates .date-input {
+    padding: 0 5px;
+    border: none;
+    width: 70px;
+    color: #8a8d9a;
+}
+
+.pvp-checklog-block .dates .send-button {
+    border: none;
+    border-left: 1px solid #b9c0de;
+    background: #fff;
+    color: #8a8d9a;
+    padding: 5px 15px 5px 5px;
+    cursor: pointer;
+}
+
+.pvp-checklog-block .export .export-button {
+    border: 1px solid #b9c0de;
+    color: #8a8d9a;
+    padding: 5px;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pvp-checklog-block .result {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px 0 0 0;
+}
+
+.pvp-checklog-block .result .row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pvp-checklog-block .result .row.header {
+    background: #b9c0de;
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+}
+
+.pvp-checklog-block .result .row .column {
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.pvp-checklog-block .result .row .column.date {
+    width: 170px;
+}
+
+.pvp-checklog-block .result .row .column.order {
+    width: 100px;
+}
+
+.pvp-checklog-block .result .row .column.status {
+    width: 100px;
+}
