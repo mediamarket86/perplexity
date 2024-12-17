@@ -1,0 +1,24 @@
+.promotions-flyer {
+	padding-top: 30px;
+	clear: both;
+}
+
+.promotions-flyer a.promotions-flyer__link {
+	display: inline-block;
+	background:  #c71848;
+	padding: 10px 45px 10px 15px;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-image: url("./images/footer-catalog-link-icon.svg");
+	background-size: 25px;
+	background-position: 98% center;
+}
+
+.promotions-flyer a.promotions-flyer__link:hover {
+	color: #fff;
+}
+
+.promotions-flyer a.promotions-flyer__link {
+	text-decoration: none;
+	margin: 20px 0;
+}

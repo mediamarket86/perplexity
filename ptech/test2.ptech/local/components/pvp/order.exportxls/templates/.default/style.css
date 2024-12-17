@@ -1,0 +1,34 @@
+.pvp-order-exportxls-block .download-btn {
+    background: #c71848;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px!important;
+    margin: 0!important;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 140px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+ /*.pvp-order-exportxls-block .download-btn:hover {*/
+ /*   background: #575b71;*/
+ /*}*/
+
+.pvp-order-exportxls-block .download-btn .export-button-desc {
+    white-space: nowrap;
+    padding-bottom: 2px;
+}
+
+.pvp-order-exportxls-block.ext-btn .download-btn .export-button-desc {
+    padding-bottom: 0;
+}
+
+.pvp-order-exportxls-block .download-btn .icon {
+    background: url("./images/excel-icon.png") no-repeat transparent;
+    height: 21px;
+    width: 24px;
+    background-size: contain;
+}

@@ -1,0 +1,47 @@
+.personal-menu .menu {
+    margin: 0 0 20px 0;
+    padding:0;
+}
+
+.personal-menu .menu-item {
+    list-style-type: none;
+    margin: 0 0 2px 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.personal-menu .menu .menu-item:hover a.menu-item__link, .personal-menu .menu .menu-item.selected a.menu-item__link{
+    border-color: #fff;
+    color: #c71848;
+    background: #fff;
+    border: 0;
+}
+
+.personal-menu .menu .menu-item a.menu-item__link {
+    color: #575b71;
+    border: 0 solid #dee0ee;
+    border-radius: 2px;
+    text-decoration: none;
+    font: inherit;
+    vertical-align: baseline;
+    display: block;
+    margin: 0;
+    padding: 7px 32px 7px 0;
+    position: relative;
+}
+
+.personal-menu .menu .menu-item a.menu-item__link .qnt {
+    background: #c71848;
+    color: #fff;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 0 8px;
+}
+
+.personal-menu .personal-menu__header {
+    font-size: 18px;
+    font-weight: 600;
+    color: #575b71;
+}

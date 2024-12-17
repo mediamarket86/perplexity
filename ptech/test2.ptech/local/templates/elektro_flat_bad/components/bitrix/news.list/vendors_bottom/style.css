@@ -1,0 +1,157 @@
+.vendors-bottom-block {
+    margin: 40px 0 0 0;
+}
+
+
+.vendors-bottom-block .header,
+.vendors-bottom-block .tagline-block,
+.vendors-bottom-block .tagline-block .tagline {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.vendors-bottom-block .header {
+    padding: 20px 25px;
+    justify-content: space-between;
+}
+
+
+.vendors-bottom-block .tagline-block .tagline:first-child {
+    width: 50%;
+}
+
+.vendors-bottom-block .tagline-block .tagline {
+    align-items: flex-start;
+    font-size: 21px;
+    font-family: "Solomon Sans Normal";
+    color: rgb(87, 91, 113);
+    line-height: 1.2;
+}
+
+.vendors-bottom-block .tagline-block .tagline .counter {
+    font-size: 65px;
+    font-family: "MyriadPro";
+    color: rgb(189, 5, 57);
+    line-height: .75;
+    padding: 0 20px;
+}
+
+.vendors-bottom-block .vendor-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 40px 0;
+}
+
+.vendors-bottom-block .vendor-list .item {
+    width: 220px;
+    height: 250px;
+    background: #f1f1f5 no-repeat;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 20px 0 0;
+    background-size: contain;
+    padding: 20px 0 0 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.vendors-bottom-block .vendor-list .item .logo .logo__img {
+    max-width: 180px;
+}
+
+.vendors-bottom-block .vendor-list .item .desc {
+    font-size: 16px;
+    font-family: "Solomon Sans Normal";
+    color: #575b71;
+    line-height: 1.356;
+    text-align: left;
+    padding: 20px 0 0 0;
+}
+
+.vendors-bottom-block.pt-slider .vendor-list.slick-slider .button {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 12px;
+    position: absolute;
+    top: 50%;
+    background-position: center center;
+    background-size: contain;
+}
+
+.vendors-bottom-block.pt-slider .vendor-list.slick-slider .button.slick-disabled {
+    visibility: hidden;
+}
+
+.vendors-bottom-block.pt-slider .vendor-list.slick-slider .button.back{
+    left: -25px;
+    background-image: url("./images/left.svg");
+}
+
+.vendors-bottom-block.pt-slider .vendor-list.slick-slider .button.forward{
+    right: -25px;
+    background-image: url("./images/right.svg");
+}
+
+@media screen and (max-width: 900px) {
+    .vendors-bottom-block {
+        padding: 0 10px;
+    }
+
+    .vendors-bottom-block .tagline-block .tagline.prod-count {
+        flex-direction: column;
+    }
+
+    .vendors-bottom-block .tagline.prod-count .counter {
+        padding-left: 0;
+    }
+
+    .vendors-bottom-block .tagline-block .tagline:first-child {
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 787px) {
+    .vendors-bottom-block.pt-slider .vendor-list.slick-slider .button {
+        z-index: 500;
+    }
+
+    .vendors-bottom-block.pt-slider .vendor-list.slick-slider .button.back{
+        left: 25px;
+    }
+
+    .vendors-bottom-block.pt-slider .vendor-list.slick-slider .button.forward{
+        right: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .vendors-bottom-block .tagline-block .tagline .counter {
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    .vendors-bottom-block .tagline-block .tagline .counter {
+        font-size: 40px;
+    }
+
+    .vendors-bottom-block .tagline-block .tagline .desc {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .vendors-bottom-block .tagline-block .tagline:first-child {
+        width: auto;
+    }
+
+}
+
+
+
+
+

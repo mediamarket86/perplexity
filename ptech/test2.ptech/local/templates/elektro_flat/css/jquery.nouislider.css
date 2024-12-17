@@ -1,0 +1,170 @@
+
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,
+.noUi-target * {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-ms-touch-action: none;
+-ms-user-select: none;
+-moz-user-select: none;
+-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.noUi-target {
+	position: relative;
+}
+.noUi-base {
+	width: 100%;
+	height: 100%;
+	position: relative;
+    background: #dcd5d1;
+    background: linear-gradient(to bottom, #dcd5d1, #d2d1d1);
+    background: -o-linear-gradient(to bottom, #dcd5d1, #d2d1d1);
+    background: -moz-linear-gradient(to bottom, #dcd5d1, #d2d1d1);
+    background: -webkit-linear-gradient(to bottom, #dcd5d1, #d2d1d1);
+    background: -ms-linear-gradient(to bottom, #dcd5d1, #d2d1d1);
+}
+.noUi-origin {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.noUi-handle {
+	position: relative;
+	z-index: 1;
+}
+.noUi-stacking .noUi-handle {
+/* This class is applied to the lower origin when
+   its values is > 50%. */
+	z-index: 10;
+}
+.noUi-stacking + .noUi-origin {
+/* Fix stacking order in IE7, which incorrectly
+   creates a new context for the origins. */
+	*z-index: -1;
+}
+.noUi-state-tap .noUi-origin {
+-webkit-transition: left 0.3s, top 0.3s;
+	transition: left 0.3s, top 0.3s;
+}
+.noUi-state-drag * {
+	cursor: inherit !important;
+}
+
+/* Painting and performance;
+ * Browsers can paint handles in their own layer.
+ */
+.noUi-base {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+	height: 2px;
+	margin-bottom: 14px;
+}
+.noUi-horizontal .noUi-handle {	
+	left: -12px;
+	top: -7.5px;
+}
+.noUi-vertical {
+	width: 18px;
+}
+.noUi-vertical .noUi-handle {
+	width: 28px;
+	height: 34px;
+	left: -6px;
+	top: -17px;
+}
+
+/* Styling;
+ */
+.noUi-background {
+    background: #dcd5d1;
+    background: linear-gradient(to bottom, #dcd5d1, #d2d1d1);
+    background: -o-linear-gradient(to bottom, #dcd5d1, #d2d1d1);
+    background: -moz-linear-gradient(to bottom, #dcd5d1, #d2d1d1);
+    background: -webkit-linear-gradient(to bottom, #dcd5d1, #d2d1d1);
+    background: -ms-linear-gradient(to bottom, #dcd5d1, #d2d1d1);
+    height: 5px;
+}
+.price-range-slider {
+    width: 175px;
+    margin-top: 31px;
+}
+.noUi-connect {
+    background: #ff5b28;
+    -webkit-transition: background 450ms;
+	transition: background 450ms;
+}
+.noUi-origin {
+	border-radius: 2px;
+}
+.noUi-target {
+	
+}
+.noUi-target.noUi-connect {
+	box-shadow: inset 0 0 3px rgba(51,51,51,0.45), 0 3px 6px -5px #BBB;
+}
+
+/* Handles and cursors;
+ */
+.noUi-dragable {
+	cursor: w-resize;
+}
+.noUi-vertical .noUi-dragable {
+	cursor: n-resize;
+}
+.noUi-handle {		
+	cursor: default;
+    width: 12px;
+    height: 15px;
+    background: url('../images/scale-btn.png') no-repeat 0 0;
+    margin-top: 11px;
+    margin-left: 2px;
+    position: relative;
+}
+.noUi-origin:last-child .noUi-handle {
+    background-position: 0 -15px;
+    margin-left: 10px;
+}
+.noUi-active {
+	
+}
+
+/* Handle stripes;
+ */
+.noUi-handle:before,
+.noUi-handle:after {
+	
+}
+.noUi-handle:after {
+	
+}
+.noUi-vertical .noUi-handle:before,
+.noUi-vertical .noUi-handle:after {
+	width: 14px;
+	height: 1px;
+	left: 6px;
+	top: 14px;
+}
+.noUi-vertical .noUi-handle:after {
+	top: 17px;
+}
+
+/* Disabled state;
+ */
+[disabled].noUi-connect,
+[disabled] .noUi-connect {
+	background: #B8B8B8;
+}
+[disabled] .noUi-handle {
+	cursor: not-allowed;
+}
