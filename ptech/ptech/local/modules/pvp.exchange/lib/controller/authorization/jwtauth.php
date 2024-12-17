@@ -51,32 +51,48 @@ class JWTAuth implements ControllerInterface
         }
     }
 
-    public function login(): void
-    {
-        $data = $this->getData();
-
-        if (empty($data['login']) || empty($data['password'])) {
-            $this->response->setStatusCode(Response::STATUS_ERROR);
-            $this->errorManager->addError(GetMessage('PVP_EX_JWTAUTH_ERR_FIELDS_NOT_FOUND'));
-
-            return;
-        }
-
-        global $USER;
-
-        $result = $USER->Login($data['login'], $data['password']);
-
-        if (true !== $result) {
-            $this->response->setStatusCode(Response::STATUS_ERROR);
-            $this->errorManager->addError(strip_tags($result['MESSAGE']));
-
-            return;
-        }
-
-        $tokens = $this->jwtManager->create($USER->GetID());
-
-        Response::getInstance()->setResponseData($tokens);
+public function login(): void
+{
+    $data = $this->getData();
+    // Добавьте отладочную информацию
+    if ($this->arParams['DEBUG_MODE'] === 'Y') {
+        $this->errorManager->addError("DEBUG: Received login data: " . print_r($data, true));
     }
+
+    if (empty($data['login']) || empty($data['password'])) {
+        $this->response->setStatusCode(Response::STATUS_ERROR);
+        $this->errorManager->addError(GetMessage('PVP_EX_JWTAUTH_ERR_FIELDS_NOT_FOUND'));
+        
+        // Добавляем отладочную информацию
+        if ($this->arParams['DEBUG_MODE'] === 'Y') {
+            $this->errorManager->addError("DEBUG: Empty login or password");
+        }
+        return;
+    }
+
+    global $USER;
+    $result = $USER->Login($data['login'], $data['password']);
+    
+    if (true !== $result) {
+        $this->response->setStatusCode(Response::STATUS_ERROR);
+        $this->errorManager->addError(strip_tags($result['MESSAGE']));
+        
+        // Добавляем отладочную информацию
+        if ($this->arParams['DEBUG_MODE'] === 'Y') {
+            $this->errorManager->addError("DEBUG: Login failed. Error: " . print_r($result, true));
+        }
+        return;
+    }
+
+    $tokens = $this->jwtManager->create($USER->GetID());
+    Response::getInstance()->setResponseData($tokens);
+    
+    // Добавляем отладочную информацию об успешном входе
+    if ($this->arParams['DEBUG_MODE'] === 'Y') {
+        $this->errorManager->addError("DEBUG: Login successful for user ID: " . $USER->GetID());
+    }
+}
+
 
     public function refresh()
     {
