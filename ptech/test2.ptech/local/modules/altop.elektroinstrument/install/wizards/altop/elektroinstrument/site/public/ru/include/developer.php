@@ -1,1 +1,0 @@
-<a href="http://altop.ru" target="_blank">Интернет-магазины<br />на 1С-Битрикс<span class="logo">A</span></a>

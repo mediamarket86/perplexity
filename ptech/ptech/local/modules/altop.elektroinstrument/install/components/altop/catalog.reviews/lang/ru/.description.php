@@ -1,5 +1,0 @@
-<?
-$MESS["CATALOG_REVIEWS_COMPONENT_NAME"] = "Отзывы к товарам";
-$MESS["CATALOG_REVIEWS_COMPONENT_DESCR"] = "Отзывы к товарам";
-$MESS["ALTOP_TOOLS"] = "ALTOP TOOLS";
-?>
